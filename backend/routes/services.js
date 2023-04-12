@@ -5,9 +5,7 @@ import Service from '../models/Service.js';
 import { Router } from "express";
 
 const router = Router();
-
 //const router = require("express").Router()
-
 //const serviceController = require("../controllers/serviceController");
 
 router

@@ -43,7 +43,7 @@ const serviceController = {
       const id = req.params.id;
       const service = await ServiceModel.findById(id);
       if (!service) {
-        res.status(404).json({ message: "serviço não encontrado" });
+        res.status(201).json({ message: "serviço não encontrado" });
         return;
       }
       const deletedService = await ServiceModel.findByIdAndDelete(id);
